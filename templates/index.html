@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>{{title}}</title>
+    </head>
+    <body>
+        <h1><i>{{deta}}</i></h1>
+        <p> Welcome to weight convorter...</p>
+        <p>Here we convert your weight to pound to kilogram and vice versa</p>  
+
+        <a href="https://www.w3schools.com/html/html_basic.asp">Click here to learn Html</a>
+
+        {%for n in list%}
+        <div>{{forloop.counter}} {{n}}</div>
+        {% endfor %}
+       
+        <a href="https://www.youtube.com/watch?v=_uQrJ0TkZlc&t=12203s">Click here to learn python and Django</a>
+        
+        <table border = "1" cellpadding = "5">
+            <tr>
+                <th>Name</th>
+                <th>Phone no.</th>
+            </tr>
+            {% for d in s_details %}
+            <tr>
+                <td>{{d.name}}</td>
+                <td>{{d.phone}}</td>
+            </tr>
+        {% endfor %}
+        </table>
+    {% if num|length > 0 %}
+        {% for a in num %}
+            {% if a > 30 %}
+             <div>{{forloop.counter}}{{a}}</div>
+            {% endif %}
+        {% endfor %}
+    {% else %}
+        No data
+    {% endif %}
+
+    </body>
+    
+
+</html>

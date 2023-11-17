@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <main> 
+        <div class="container">
+            <div class="box1">
+                <h1>We have best price to offer for books (buying and selling)</h1>
+                <p>We have a lot of textbooks to offer you,from applied literature to education resources</p>
+                <button>Read more</button>
+            </div>
+            <div class="box2">
+                <img src="/static/./books/images.jpeg" alt="book">
+                <h3>On Writing: A Memoir of the Craft</h3>
+                <p>Stephen King</p>
+            </div>
+        </div>
+    </main>
+
+    <div class="section1">
+
+        <h1>Top Selling Books</h1>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="box">
+                    <div class="image">
+                        <img src="/static/./books/TopBooks/book1.jpg" alt="books">
+                    </div>
+                    <div class="content">
+                        <div class="price">Rs555</div>
+                        <a href="#">Add to Cart</a>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                    <div class="image">
+                        <img src="/static/./books/TopBooks/book2.jpg" alt="books">
+                    </div>
+                    <div class="content">
+                        <div class="price">Rs400</div>
+                        <a href="#">Add to Cart</a>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                    <div class="image">
+                        <img src="/static/./books/TopBooks/book3.jpeg" alt="books">
+                    </div>
+                    <div class="content">
+                        <div class="price">Rs799</div>
+                        <a href="#">Add to Cart</a>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                    <div class="image">
+                        <img src="/static/./books/TopBooks/book4.jpeg" alt="books">
+                    </div>
+                    <div class="content">
+                        <div class="price">Rs500</div>
+                        <a href="#">Add to Cart</a>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                    <div class="image">
+                        <img src="./books/TopBooks/book5.jpeg" alt="books">
+                    </div>
+                    <div class="content">
+                        <div class="price">Rs500</div>
+                        <a href="#">Add to Cart</a>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                    <div class="image">
+                        <img src="/static/./books/TopBooks/book6.jpg" alt="books">
+                    </div>
+                    <div class="content">
+                        <div class="price">Rs599</div>
+                        <a href="#">Add to Cart</a>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                    <div class="box">
+                        <div class="image">
+                            <img src="./books/TopBooks/book7.jpeg" alt="books">
+                        </div>
+                        <div class="content">
+                            <div class="price">Rs1600</div>
+                            <a href="#">Add to Cart</a>
+                        </div>
+                    </div>
+              </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    {% endblock %}
+
+
+
